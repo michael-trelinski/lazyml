@@ -45,16 +45,6 @@
     (testing "prediction"
              (is (= (* (predict [[1] [3.5]] new-theta) 10000) 4519.767867701776)))))
 
-(comment
-  (deftest logistic-regression-test
-  (testing "sigmoid function on matrix"
-           (is (= [[0.5 0.7310585786300049 0.5 0.7310585786300049] 
-                   [0.5 0.7310585786300049 0.5 0.7310585786300049] 
-                   [0.7310585786300049 0.7310585786300049 0.7310585786300049 0.7310585786300049]]
-                  (sigmoid [[0 1 0 1] [0 1 0 1] [1 1 1 1]]))))
-  (testing "sigmoid base case"
-           (is (= 0.5 (sigmoid 0))))))
-
 (time
   (do
     (ones-test)
