@@ -1,7 +1,6 @@
 (ns ml.vector)
 
-(comment
-  "vector manipulation stuff... let's try to keep it as lazy as possible...")
+; vector manipulation stuff... let's try to keep it as lazy as possible...
 
 (defn interleave-fn
   ([f c1 c2]
